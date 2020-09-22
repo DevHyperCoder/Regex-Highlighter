@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,22 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
+
 <body>
-    <textarea name="regex" id="regexp" cols="30" rows="10"></textarea>
-    <input type="text" id="flag">
-    <div contenteditable style="display: inline-block"; id="string" >Enter your string here</div>
+    <!-- Heading -->
+    <h1>RegEx Highlighter</h1>
+    <!-- Regex and flag -->
+    <div class="container">
+        <textarea name="regex" id="regexp" placeholder="regex"></textarea>
+        <input type="text" id="flag" placeholder="flags">
+    </div>
+
+    <!-- User String and output div -->
+    <div class="result">
+        <textarea name="string" id="string" class="regexP" placeholder="string"></textarea>
+        <div id="regexHighlightOutput" readonly></div>
+    </div>
+    
 </body>
+
 </html>
